@@ -1,0 +1,66 @@
+@import url(/reset.css);
+@font-face {
+    font-family: opensans;
+    src: url(./font/Pretendard-Medium.woff2);
+}
+@font-face {
+    font-family: binggrae;
+    src: url(./font/Pretendard-SemiBold.woff2);
+}
+
+
+
+html,body{height: 100%;
+}
+
+
+.wrap{font-family: opensans;
+background-image: url(./img/landing_bg.jpg);
+height: 100%;
+background-position: center bottom -3.1rem;
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+
+header{display: flex;
+padding: 3rem 2.25rem;
+gap: 1.55rem;
+}
+.ul1{display: flex;
+    gap: 0.65rem;
+margin-top: 7px;}
+
+main{text-align: center;
+font-family: opensans;
+font-size: 1.33rem;
+font-style: #333333;
+line-height: 2.3rem;
+margin: 1.75rem;
+}
+
+main p{margin-top: 2.45rem;}
+
+.link{display: inline-flex;
+gap: 0.9rem;
+margin-top: 5.5rem;}
+
+a{font-size: 1.7rem;
+    padding: 2.57rem 3.15rem ;
+font-family: binggrae;
+color: #fff;
+border-radius: 10px;
+
+}
+ 
+.bone{background: #0D9AB4;
+    border: 0.15rem solid #0D9AB4;}
+
+.bone:hover{background: #fff;
+color: #0D9AB4;}
+
+.btwo{background: #F74763;
+    border: 0.15rem solid #F74763;}
+
+.btwo:hover{background: #fff;
+color: #F74763;}

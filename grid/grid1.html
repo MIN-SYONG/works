@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+html, body{height: 100vh;}
+
+        .wrap {
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-columns: repeat(5, 1fr);
+        }
+        /* fr 디바이스 넓이를 다 채우겠다 */
+        .wrap>div{border: 1px solid #000;}
+
+        .item1{
+            grid-column: 1/span 2;
+            grid-row: 1/4;
+        }
+
+        .item2{
+            grid-column: 3/5;
+        }
+        .item4{
+            grid-column: 3/5;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="item1">item1</div>
+        <div class="item2">item2</div>
+        <div class="item3">item3</div>
+        <div class="item4">item4</div>
+        <div class="item5">item5</div>
+        <div class="item6">item6</div>
+        <div class="item7">item7</div>
+        <div class="item8">item8</div>
+    </div>
+</body>
+
+</html>

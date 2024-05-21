@@ -1,0 +1,16 @@
+@font-face {
+    font-family:NotoSerifKR-Medium;
+    src: url(./NotoSerifKR-Medium.woff2);
+  }
+@font-face {
+    font-family:NotoSerifKR-Regular;
+    src: url(./NotoSerifKR-Regular.woff2);
+  }
+@font-face {
+    font-family:NotoSerifKR-SemiBold;
+    src: url(./NotoSerifKR-SemiBold.woff2);
+  }
+@font-face {
+    font-family:xeicon;
+    src: url(./xeicon.woff2);
+  }

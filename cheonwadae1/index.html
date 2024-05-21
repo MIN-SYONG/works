@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>청와대 국민의 품으로</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+background-position: center;
+background-size: cover;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header_inner flex">
+            <h1>
+                <a href="#">
+                    <img class="" src="./image/logo.png" alt="">
+                    <img class="logo_black" src="./image/logo_black.png" alt="">
+                </a>
+            </h1>
+            <nav class="flex">
+                <ul id="head_menu" class="flex">
+                    <li class="main_menu">
+                        <a href="#">개방의 의미</a>
+                    </li>
+                    <li class="main_menu">
+                        <a href=#>청와대 소개</a>
+                        <ul class="sub_menu">
+                            <li>
+                                <a href=#>역사</a>
+                            </li>
+                            <li>
+                                <a href=#>지도 및 주요시설</a>
+                            </li>
+                            <li>
+                                <a href=#>경내 주요 유적</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="main_menu">
+                        <a href="#">관람안내</a>
+                        <ul class="sub_menu">
+                            <li>
+                                <a href="#">관람 규칙 및 규정</a>
+                            </li>
+                            <li>
+                                <a href="#">관람 시간 및 해설 안내</a>
+                            </li>
+                            <li>
+                                <a href="#">관람 신청</a>
+                            </li>
+                            <li>
+                                <a href="#">관람 안내도</a>
+                            </li>
+                            <li>
+                                <a href="#">함께 가 볼 만한 장소</a>
+                            </li>
+                            <li>
+                                <a href="#">공연 프로그램</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="main_menu">
+                        <a href="#">등산로</a>
+                        <ul class="sub_menu">
+                            <li>
+                                <a href="#">개요</a>
+                            </li>
+                            <li>
+                                <a href="#">등산로 코스</a>
+                            </li>
+                            <li>
+                                <a href="#">등산로 이모저모</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="main_menu">
+                        <a href="#">오시는 길 및 교통정보</a>
+                        <ul class="sub_menu">
+                            <li>
+                                <a href="#">오시는 길</a>
+                            </li>
+                            <li>
+                                <a href="#">청와대 관람 순환버스</a>
+                            </li>
+                            <li>
+                                <a href="#">서울시자율주행버스(청와대A01)</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="main_menu">
+                        <a href="#">국민소통</a>
+                        <ul class="sub_menu">
+                            <li>
+                                <a href="#">공지사항</a>
+                            </li>
+                            <li>
+                                <a href="#">미디어센터</a>
+                            </li>
+                            <li>
+                                <a href="#">자주 하는 질문</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="main_menu">
+                        <a href="#">내가 만드는 청와대</a>
+                        <ul class="sub_menu">
+                            <li>
+                                <a href="#">관람후기</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="gnb flex">
+                    <li><a href="#"><img src="./image/header-youtube.png" alt=""></a></li>
+                    <li><a href="#"><img src="./image/header-instagram.png" alt=""></a></li>
+                    <li><a href="#">EN</a></li>
+                    <li><a class="bar" href="#"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="sect1">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./image/v_img01_sdown.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./image/v_img02.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./image/v_img03.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./image/v_img04.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./image/v_img05.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./image/v_img06.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./image/v_img07.jpg" />
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="sect2"></section>
+    <section id="sect3"></section>
+    <section id="sect4"></section>
+    <section id="sect5"></section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+         var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        effect: "fade",
+        loop: true,
+    });
+
+    </script>
+</body>
+
+</html>

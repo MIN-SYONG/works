@@ -1,0 +1,20 @@
+@font-face {
+    font-family: xeicon;
+    src: url(./xeicon.woff2);
+}
+
+@font-face {
+    font-family: NS_m;
+    src: url(./NotoSerifKR-Medium.woff2);
+}
+
+@font-face {
+    font-family: NS_r;
+    src: url(./NotoSerifKR-Regular.woff2);
+}
+
+@font-face {
+    font-family: NS_sb;
+    src: url(./NotoSerifKR-SemiBold.woff2);
+}
+

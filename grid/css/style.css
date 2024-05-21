@@ -1,0 +1,210 @@
+@import '/reset.css';
+@import './font.css';
+@keyframes btnAni {
+  0% {
+    transform: scale(1);
+    background: #fff;
+  }
+  100% {
+    transform: scale(0.8);
+    background: #fdd;
+  }
+}
+a.bar {
+  position: fixed;
+  z-index: 99;
+  background: #fff;
+  padding: 3px;
+  left: 5px;
+  top: 5px;
+  animation: btnAni 1s infinite linear alternate;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+#wrap {
+  width: 100%;
+  height: 100%;
+  perspective: 900px;
+}
+
+#wrap.on0 {
+  background: #00f;
+}
+
+#wrap.on1 {
+  background: #f00;
+}
+
+#wrap.on2 {
+  background: #0f0;
+}
+
+img {
+  vertical-align: top;
+}
+
+nav {
+  position: fixed;
+  width: 200px;
+  height: 100%;
+  z-index: 10;
+  background: #fff;
+  transform-origin: left center;
+  transition: 0.35s;
+  transform: rotateY(100deg);
+  display: none;
+}
+nav.on {
+  transform: rotateY(15deg);
+}
+
+section {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  transition: 0.35s;
+  transform-origin: right center;
+}
+section.on {
+  transform: rotateY(-5deg);
+}
+
+article {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  display: grid;
+  perspective: 500px;
+}
+article.on {
+  opacity: 1;
+}
+article.on div {
+  transform: rotateY(0deg);
+}
+article#art1 {
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 10px;
+  background: #15193F;
+}
+article#art1 div {
+  background: #000;
+  transition: 0.35s;
+}
+article#art1 div p {
+  width: 65%;
+  position: absolute;
+  font-family: PartialSansKR-Regular;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 24px;
+  font-size: 20px;
+}
+article#art1 div.item1 {
+  background: url(../images/lol/item1.png);
+}
+article#art1 div.item3 {
+  background: url(../images/lol/item3.png);
+  grid-column: 3/5;
+  position: relative;
+  filter: grayscale(50%);
+}
+article#art1 div.item3 p {
+  font-family: GangwonEduPowerExtraBoldA;
+}
+article#art1 div.item4 {
+  background: url(../images/lol/item4.png);
+}
+article#art1 div.item6 {
+  background: url(../images/lol/item6.png);
+  grid-column: 7/9;
+}
+article#art1 div.item6 p {
+  text-align: center;
+  font-size: 20px;
+  font-family: GangwonEduPowerExtraBoldA;
+}
+article#art1 div.item6 span {
+  background: #000;
+  border-radius: 20px;
+  width: 50px;
+  display: inline-block;
+  margin-top: 1rem;
+}
+article#art1 div.item6 span a {
+  padding: 0.5rem;
+  display: block;
+}
+article#art1 div.item6 span a:hover {
+  filter: opacity(0.5);
+}
+article#art1 div.item6 span a img {
+  width: 100%;
+}
+article#art1 div.item7 {
+  background: url(../images/lol/item7.png);
+  grid-column: 1/4;
+  grid-row: 2/4;
+}
+article#art1 div.item8 {
+  background: url(../images/lol/item8.png);
+  grid-column: 4/6;
+}
+article#art1 div.item9 {
+  background: url(../images/lol/item9.png);
+  grid-column: 6/9;
+  grid-row: 2/4;
+}
+article#art1 div.item10 {
+  grid-column: 4/6;
+  overflow: hidden;
+}
+article#art1 div.item11 {
+  background: url(../images/lol/item11.png);
+  grid-column: 1/3;
+}
+article#art1 div.item13 {
+  background: url(../images/lol/item13.png);
+}
+article#art1 div.item14 {
+  background: url(../images/lol/item14.png);
+  grid-column: 5/7;
+}
+article#art1 div.item14 p {
+  width: 80%;
+  font-size: 32px;
+  text-align: center;
+  font-family: GangwonEduPowerExtraBoldA;
+}
+article#art1 div.item16 {
+  background: url(../images/lol/item16.png);
+}
+article#art1 div.item16 p {
+  font-size: 28px;
+  line-height: 40px;
+  text-align: center;
+}
+article#art1 div.item16 p a:hover {
+  color: #999;
+}
+article#art1 div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+article#art1 div video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}

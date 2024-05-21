@@ -1,0 +1,353 @@
+@import '/reset.css';
+@import './font.css';
+
+.flex {
+    display: flex;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    padding: 2rem 3rem 2rem 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    font-family: NanumBarunGothic;
+    z-index: 99;
+
+    .hd_left {
+        align-items: center;
+        gap: 1rem;
+
+
+        .hm {
+            cursor: pointer;
+            width: 22px;
+            height: 16px;
+
+            span {
+                display: block;
+                height: 2px;
+                background: #fff;
+            }
+
+            span.hm1 {
+                width: 14px;
+                transition: .5s;
+            }
+
+            span.hm2 {
+                width: 100%;
+                margin: 5px 0;
+                transition: .5s;
+            }
+        }
+
+        .hm:hover span.hm1 {
+            width: 100%;
+            transition: .5s;
+        }
+
+        .hm:hover span.hm2 {
+            width: 14px;
+            transition: .5s;
+        }
+
+        h1 {
+            cursor: pointer;
+
+            img {
+                width: 95px;
+            }
+        }
+
+    }
+
+    .menu {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 18px;
+        gap: 2rem;
+    }
+
+    .hd_right {
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+
+        .service_menu {
+            gap: 10px;
+            font-size: 14px;
+
+            a {
+                position: relative;
+                padding-left: 10px;
+            }
+
+            a::before {
+                content: '';
+                background: #ec7d2c;
+                display: block;
+                width: 3px;
+                height: 3px;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 0;
+            }
+        }
+
+        .icon_box {
+            gap: 1.5rem;
+            align-items: center;
+
+            img {
+                cursor: pointer;
+            }
+
+            .search {
+                align-items: center;
+
+                input {
+                    font-size: 15px;
+                    background: none;
+                    width: 295px;
+                    height: 32px;
+                    line-height: 32px;
+                    border: none;
+                    border-bottom: 3px solid #fff;
+                }
+
+                img {
+                    width: 22px;
+                    height: 22px;
+                }
+            }
+        }
+    }
+}
+
+section {
+    padding: 80px 0;
+    text-align: center;
+    position: relative;
+
+
+    h2 {
+        font-size: 32px;
+        letter-spacing: -0.025em;
+    }
+
+    .tab_menu {
+        margin: 2rem auto 3rem;
+        width: 25%;
+
+        li {
+            flex: 1;
+
+            a {
+                font-size: 18px;
+                font-family: NanumBarunGothic;
+                display: block;
+                color: #555;
+            }
+        }
+
+        li:hover a {
+            color: orange;
+        }
+    }
+
+    article {
+        gap: 1rem;
+        width: 1200px;
+        margin: auto;
+        display: none;
+
+        .art_figure {
+            flex: 1;
+            border-bottom: 1px solid #ddd;
+            background: #fff;
+            position: relative;
+
+            figure {
+                width: 100%;
+                height: 340px;
+                cursor: pointer;
+                position: relative;
+
+                img.poster {
+                    width: 200px;
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    z-index: 98;
+                }
+
+                .bg_box {
+                    width: 100%;
+                    height: 100%;
+                    overflow: hidden;
+                    border: .1px solid #e7e6e6;
+
+                    img {
+                        width: 125%;
+                        position: relative;
+                        left: -12.5%;
+                        top: -50%;
+                        filter: blur(10px);
+                    }
+                }
+            }
+
+            figcaption {
+                width: 100%;
+                margin-top: 26px;
+                text-align: center;
+
+                h3 {
+                    margin: auto;
+                    overflow: hidden;
+                    width: 200px;
+                    font-size: 15px;
+                    text-overflow: ellipsis;
+                    text-wrap: nowrap;
+                }
+
+                span {
+                    font-size: 13px;
+                    color: #999;
+                    display: block;
+                    margin: .5rem auto 1rem;
+                }
+
+            }
+
+            .rank_box {
+                width: 45px;
+                height: 45px;
+                color: #fff;
+                background: orange;
+                text-align: center;
+                line-height: 45px;
+                position: absolute;
+                top: 72%;
+                left: 14px;
+            }
+
+            .event_box1 {
+                width: 48px;
+                height: 38px;
+                font-size: 12px;
+                color: #fff;
+                background: url(./image/ticket-tail2.png) no-repeat;
+                text-align: center;
+                line-height: 24px;
+                position: absolute;
+                top: 75%;
+                left: 14px;
+            }
+
+            .event_box.one {
+                background: url(./image/ticket-tail.png) no-repeat;
+            }
+
+            .event_box2 {
+                width: 45px;
+                height: 45px;
+                color: #fff;
+                background: #fff;
+                border-radius: 99px;
+                position: absolute;
+                top: 72%;
+                left: 14px;
+                font-size: 12px;
+                align-items: center;
+                justify-content: center;
+
+                p {
+                    width: 35px;
+                    height: 35px;
+                    border-radius: 99px;
+                    line-height: 35px;
+                    text-align: center;
+                    background: orange;
+                }
+
+            }
+        }
+
+
+
+    }
+
+    article.on {
+        display: flex;
+    }
+
+    .rank_plus {
+        width: 220px;
+        border: 1px solid #ddd;
+        margin: 3rem auto 0;
+
+        a {
+            font-size: 14px;
+            display: block;
+            width: 100%;
+            padding: 1rem;
+        }
+    }
+
+    .ranking_accordion {
+        width: 100%;
+        padding: 80px 0;
+        margin-top: 3rem;
+        background: #FEE;
+        gap: 30px;
+        justify-content: center;
+
+        .weekly_ranking_box {
+            width: 500px;
+            height: 500px;
+            border: 1px solid #ddd;
+            background: #fff;
+            .wrb_top{
+h2{
+    font-size: 28px;
+}
+
+span{
+    font-size: 13px;
+    font-weight: 600;
+    padding: .3rem 1rem;
+    border: 1px solid #ddd;
+}
+            }
+
+            .wrb_bottom{
+                img{
+                    width: 80px;
+                }
+            }
+        }
+
+        .place_recommendation_box {
+            width: 700px;
+            height: 500px;
+            border: 1px solid #ddd;
+            background: #fff;
+
+        }
+    }
+
+    .banner {
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
+}

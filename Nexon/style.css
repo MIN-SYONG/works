@@ -1,0 +1,206 @@
+@import url(/reset.css);
+
+* {
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+}
+
+/* header---------------------------------------------- */
+
+header {
+    height: 103px;
+    background-image: url(./img/bg_header_wrap.gif);
+}
+
+.inner-wrap {
+    height: 100%;
+    width: 1200px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+body{background: #eef1f2;}
+
+
+/* menu---------------------------------------------- */
+nav ul li a{display: block;
+background-image: url(./img/bg_gnb.gif);
+height: 60px;
+color: transparent;
+background-repeat: no-repeat;
+transition: 0.35s;
+}
+
+nav ul li:hover a{
+background-position-y: -70px;}
+
+nav ul li:nth-child(1) a{width: 82px;}
+nav ul li:nth-child(2) a{width: 103px;
+background-position-x: -92px;
+}
+nav ul li:nth-child(3) a{width: 68px;
+background-position-x: -205px;
+}
+nav ul li:nth-child(4) a{width: 77px;
+background-position-x: -273px;
+}
+nav ul{gap: 100px;
+position: relative;
+top: 18px;
+}
+
+/* container */
+.container{width: 1200px;
+padding: 42px 0 40px 0;
+margin: auto;
+}
+
+/* main-------------------------------------------- */
+.box1{width: 223px;
+height: 206px;
+color: transparent;
+}
+.box2{width: 462px;
+height: 206px;}
+
+.box3{width: 462px;
+height: 206px;
+color: transparent;}
+
+main{width: 712px;
+    flex-wrap: wrap;
+gap: 1rem;
+}
+
+.goods-info{background-image: url(./img/bg_goods_info.gif);
+}
+
+.box1:hover{background-position-y: -206px;
+    transition: .35s;}
+
+.box3:hover{background-position-y: -206px;
+    transition: .35s;}
+
+main .box1 a{display: block;
+    width: 223px;
+height: 206px;}
+
+main .box3 a{display: block;
+width: 469px;
+height: 206px;
+}
+
+.pay-list{background-image: url(./img/bg_pay_list.gif)}
+.game-play{background-image: url(./img/bg_game_play.gif)}
+.event-apply{background-image: url(./img/bg_event_apply.gif)}
+.notice{background: #fff url(./img/tit_notice.gif) no-repeat 27px 28px;
+font-size: 14px;
+padding: 70px 30px 30px 30px;
+position: relative;
+line-height: 1.75rem;
+}
+
+.notice img{position: absolute;
+top: 0;
+right: 0px;}
+
+.ip-manage{background-image: url(./img/bg_ip_manage.gif)}
+.refund-apply{background-image: url(./img/bg_refund_apply.gif)}
+.taxinvioce{background-image: url(./img/bg_taxInvoice.gif)}
+.customer-center{background-image: url(./img/bg_customer_center.gif)}
+.remote-supply{background-image: url(./img/bg_remote_supply.gif)}
+.pay-list{background-image: url(./img/bg_pay_list.gif)}
+
+/* Aside---------------------------------------------- */
+aside{width: 470px;}
+
+.login-ip{gap:11px}
+
+.login-box{width: 340px;
+height: 100px;
+}
+.login-id{width: 100%;
+    height: 50px;
+    background: 25px center url(./img/bg_txt_id.png) no-repeat rgb(255, 255, 255);
+border: 1px solid #d7d7d9;
+padding: 14px 25px;
+
+}
+
+.login-pw{width: 100%;
+height: 50px;
+background: 25px center url(./img/bg_txt_pw.png) no-repeat rgb(255, 255, 255);
+border: 1px solid #d7d7d9;
+padding: 14px 25px;
+}
+
+.util{margin: 20px 0;
+padding-bottom: 10px;
+font-size: 13px;
+}
+
+.util .my{color: #003e7c;
+font-weight: bold;}
+
+.util .check-box{width: 10px;
+height: 13px;
+border: 1px solid #000;}
+
+.util .flex li{padding: 0 6px;}
+
+.util .flex .list{background: url(./img/bg_login_bar.gif) no-repeat right 3px;}
+
+.util .flex .one{color: #3c556e;
+font-weight: bold;}
+
+.ip-address{background: #dcdcdc url(./img/bg_ip.gif) no-repeat 21px 8px;
+margin-bottom: 18px;
+font-size: 16px;
+padding: 10px 0 12px 50px;
+}
+
+.ip-address span{margin-right: 20px;}
+
+.aside-banner{position: relative;}
+.aside-banner .banner-controls{display: block;}
+
+.aside-banner .banner-controls .pre{background: url(./img/btn_rolling_arrow.gif) no-repeat 0 0;
+    position: absolute;
+    top: 0;
+    right: 66px;
+width: 66px;
+height: 66px;}
+
+.aside-banner .banner-controls .next{background: url(./img/btn_rolling_arrow.gif) no-repeat 100% 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+width: 66px;
+height: 66px;}
+
+
+
+/* footer---------------------------------------------- */
+
+footer{width: 1200px;
+    margin: auto;
+border-top: 3px solid #000;
+padding-bottom: 30px;}
+
+.footer-logo{width: 190px;
+padding: 78px 0 45px 0;}
+
+.footer-menu{padding: 18px 0 19px 0;
+border-bottom: 1px solid #c2c4c4;
+margin-bottom: 30px;}
+
+.footer-menu ul li{background: url(./img/bg_footer_menu.png) no-repeat 100% 0;
+    padding: 0 35px;}
+
+.footer-menu ul li .privacy{padding-left: 0;}
+
+.footer-menu ul li .service{}

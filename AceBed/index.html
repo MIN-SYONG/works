@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>에이스침대</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        .swiper {
+            width: 100%;
+            height: calc(100vh - 280px);
+            margin-top: 85px;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .swiper-slide video {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .swiper-button-prev {
+            left: 0;
+        }
+
+        .swiper-button-prev::after{display: none;}
+
+        .swiper-button-next {
+            right: 0;
+        }
+
+        .swiper-button-next::after{display: none;}
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="utill_box flex">
+            <ul class="flex">
+                <li><a href="#" class="log_in">로그인</a></li>
+                <li><a href="#" class="join">회원가입</a></li>
+                <li><a href="#" class="wedding">웨딩멤버스</a></li>
+                <li><a href="#" class="bed_mall">에이스 침대몰</a></li>
+            </ul>
+        </div>
+        <nav class="flex">
+            <h1><img src="./image/header-logo.png" alt=""></h1>
+            <ul class="gnb1 flex">
+                <li class="main_menu"><a href="#"><span class="on">BED</span><span>침대</span></a>
+                    <ul class="sub_menu">
+                        <li><a href="#">프레임</a></li>
+                        <li><a href="#">매트리스</a></li>
+                        <li><a href="#">신제품</a></li>
+                        <li><a href="#">제품 매뉴얼</a></li>
+                    </ul>
+                </li>
+                <li class="main_menu"><a href="#"><span class="on">FURNITURE</span><span>가구</span></a>
+                    <ul class="sub_menu">
+                        <li><a href="#">룸 세트</a></li>
+                        <li><a href="#">리빙가구</a></li>
+                    </ul>
+                </li>
+                <li class="main_menu"><a href="#"><span class="on">STRESSLESS</span><span>스트레스리스</span></a>
+                    <ul class="sub_menu">
+                        <li><a href="#">1인용 리클라이너</a></li>
+                        <li><a href="#">오피스체어</a></li>
+                        <li><a href="#">소파</a></li>
+                        <li><a href="#">테이블&악세서리</a></li>
+                    </ul>
+                </li>
+                <li class="main_menu"><a href="#"><span class="on">SLEEP CARE</span><span>슬립케어</span></a>
+                    <ul class="sub_menu">
+                        <li><a href="#">마이크로케어</a></li>
+                        <li><a href="#">스마트슬리브</a></li>
+                        <li><a href="#">마이크로케어 쿨링패드</a></li>
+                        <li><a href="#">마이크로가드에코플러스</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="gnb2 flex">
+                <li class="main_menu"><a href="#"><span>침대과학</span></a>
+                    <ul class="sub_menu">
+                        <li><a href="#">스프링</a></li>
+                        <li><a href="#">기술력</a></li>
+                        <li><a href="#">특허 및 수상내역</a></li>
+                        <li><a href="#">침대공학연구소</a></li>
+                    </ul>
+                </li>
+                <li class="main_menu"><a href="#"><span>에이스 스토리</span></a>
+                    <ul class="sub_menu">
+                        <li><a href="#">NOW SNS</a></li>
+                        <li><a href="#">고객후기</a></li>
+                        <li><a href="#">뉴스룸</a></li>
+                    </ul>
+                </li>
+                <li class="main_menu"><a href="#"><span>고객체험</span></a>
+                    <ul class="sub_menu">
+                        <li><a href="#">매트리스 체험존</a></li>
+                        <li><a href="#">이동수면공학 연구소</a></li>
+                        <li><a href="#">공장 견학 신청</a></li>
+                    </ul>
+                </li>
+                <li class="main_menu"><a href="#"><span>이벤트</span></a>
+                    <ul class="sub_menu">
+                        <li><a href="#">이벤트</a></li>
+                        <li><a href="#">당첨자 안내</a></li>
+                    </ul>
+                </li>
+                <li class="main_menu"><a href="#"><span>매장안내</span></a>
+                    <ul class="sub_menu">
+                        <li><a href="#">매장 찾기</a></li>
+                        <li><a href="#">에이스 스퀘어</a></li>
+                        <li><a href="#">에이스 에비뉴</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="gnb_iconbox flex">
+                <a href="#"><img src="./image/gnb-search-btn.png" alt=""></a>
+                <a href="#"><img src="./image/all-menu-btn.png" alt=""></a>
+            </div>
+        </nav>
+    </header>
+    <section id="sect1">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><video src="./image/slide1.mp4" autoplay loop muted></video></div>
+                <div class="swiper-slide"><img src="./image/slide2.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./image/slide3.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./image/slide4.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./image/slide5.png" alt=""></div>
+                <div class="swiper-slide"><img src="./image/slide6.jpg" alt=""></div>
+            </div>
+
+        </div>
+        <div class="swiper-button-prev">
+            <svg>
+                <path class="btn_prev" d="M 40 10 Q 40 65 40 140"></path>
+            </svg>
+            <span>PREV</span>
+        </div>
+        <div class="swiper-button-next">
+            <svg>
+                <path class="btn_next" d="M 10 10 Q 10 65 10 140"></path>
+            </svg>
+            <span>NEXT</span>
+        </div>
+
+
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+        let P_btn = document.querySelector('.swiper-button-prev')
+        let N_btn = document.querySelector('.swiper-button-next')
+
+        P_btn.addEventListener('mouseenter', function(){
+            P_btn.querySelector('path').setAttribute('d','M 40 10 Q 10 65 40 140')
+            P_btn.querySelector('span').classList.add('on')
+        })
+        P_btn.addEventListener('mouseleave', function(){
+            P_btn.querySelector('path').setAttribute('d','M 40 10 Q 40 65 40 140')
+            P_btn.querySelector('span').classList.remove('on')
+        })
+
+        N_btn.addEventListener('mouseenter', function(){
+            N_btn.querySelector('path').setAttribute('d','M 10 10 Q 40 65 10 140')
+            N_btn.querySelector('span').classList.add('on')
+        })
+        N_btn.addEventListener('mouseleave', function(){
+            N_btn.querySelector('path').setAttribute('d','M 10 10 Q 10 65 10 140')
+            N_btn.querySelector('span').classList.remove('on')
+        })
+
+    </script>
+
+    <script>
+        let header = document.querySelector('header')
+        let menu_bar = document.querySelector('header::after')
+        let gnb1 = document.querySelector('nav .gnb1')
+        let gnb2 = document.querySelector('nav .gnb2')
+        let gnb1_main = gnb1.querySelectorAll('.main_menu')
+        let span1 = gnb1.querySelectorAll('span')
+        let span2 = gnb2.querySelectorAll('span')
+        let gnb1_sub = gnb1.querySelectorAll('.sub_menu')
+        let gnb2_sub = gnb2.querySelectorAll('.sub_menu')
+
+        gnb1_main.forEach(function (main) {
+            main.addEventListener('mouseenter', function () {
+                
+                header.classList.add('on')
+                gnb1_sub.forEach(function (sub) {
+                    sub.classList.add('on')
+                })
+            })
+        })
+        span2.forEach(function (span) {
+            span.addEventListener('mouseenter', function () {
+                header.classList.add('on')
+                gnb2_sub.forEach(function (sub) {
+                    sub.classList.add('on')
+                })
+            })
+        })
+
+        gnb1.addEventListener('mouseleave', function () {
+            header.classList.remove('on')
+            gnb1_sub.forEach(function (sub) {
+                sub.classList.remove('on')
+            })
+        })
+
+        gnb2.addEventListener('mouseleave', function () {
+            header.classList.remove('on')
+            gnb2_sub.forEach(function (sub) {
+                sub.classList.remove('on')
+            })
+        })
+
+
+
+    </script>
+</body>
+
+</html>

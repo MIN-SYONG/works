@@ -1,0 +1,199 @@
+@import '/reset.css';
+@keyframes text_left {
+  0% {
+    opacity: 0;
+    margin-left: 200px;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 0;
+  }
+}
+.flex {
+  display: flex;
+}
+
+.inner {
+  width: 1140px;
+  margin: auto;
+}
+
+header .header_top {
+  font-size: 11px;
+  font-weight: 600;
+  color: #333;
+  background: #f5f6f7;
+}
+header .header_top ul {
+  justify-content: end;
+  padding: 12px 0 5px;
+}
+header .header_top ul li {
+  padding: 0 0 10px 13px;
+}
+header .header_top ul li span {
+  display: inline-block;
+  width: 8px;
+}
+header .header_top ul li span.shopping_icon {
+  height: 10px;
+  background: url(../images/sp_icon.png);
+  background-position: -11px -95px;
+  background-size: 133px auto;
+  background-repeat: no-repeat;
+  vertical-align: -1px;
+  margin-right: 3px;
+}
+header .header_top ul li span.arrow_icon {
+  height: 5px;
+  margin: -2px 0 0 6px;
+  background: url(../images/arrow_bottom.png);
+  background-position: -16px 0;
+  transform: scale(0.8);
+}
+header .header_main .inner {
+  align-items: center;
+  justify-content: space-between;
+  height: 86px;
+}
+header .header_main .inner .header_main_right {
+  font-size: 15px;
+  font-weight: 600;
+}
+header .header_main .inner .header_main_right ul {
+  gap: 10px;
+}
+header .header_main .inner .header_main_right ul li {
+  line-height: 28px;
+}
+header .header_main .inner .header_main_right ul li:nth-child(1) {
+  color: #FF603E;
+  position: relative;
+}
+header .header_main .inner .header_main_right ul li:nth-child(1)::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 4px;
+  height: 4px;
+  background-color: #FF603E;
+  border-radius: 50%;
+}
+header .header_main .inner .header_main_right .search_form {
+  border: 1px solid #ff214f;
+  border-radius: 15px;
+  width: 262px;
+  height: 28px;
+  padding: 0 20px 0 14px;
+  background: #fff;
+  margin-left: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+header .header_main .inner .header_main_right .search_form form {
+  width: 200px;
+}
+header .header_main .inner .header_main_right .search_form form input {
+  display: block;
+  width: 100%;
+  height: 26px;
+  color: #666;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 26px;
+  outline-style: none;
+  border: 0;
+}
+header .header_main .inner .header_main_right .search_form a {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background: url(../images/sp_icon.png);
+  background-position: -108px 0;
+}
+header .menu_container ul {
+  justify-content: space-around;
+}
+header .menu_container ul li {
+  font-size: 13px;
+  text-align: center;
+  font-weight: 600;
+}
+header .menu_container ul li a {
+  display: block;
+  padding: 0.5rem 0.7rem;
+}
+header .menu_container ul li:hover a {
+  color: #ff214f;
+}
+
+section#sect1 {
+  height: 600px;
+}
+section#sect1 .text_box {
+  position: absolute;
+  top: 35%;
+  left: 22%;
+  z-index: 99;
+  width: 912px;
+  height: 140px;
+  text-align: start;
+}
+section#sect1 .text_box.on {
+  animation: text_left 0.35s linear 0.5s;
+}
+section#sect1 .text_box h2 {
+  font-size: 38px;
+}
+section#sect1 .text_box h2 span {
+  margin: 0.7rem 0 0 0.5rem;
+  display: inline-block;
+  position: relative;
+  height: 24px;
+  padding: 0 8px;
+  color: #fff;
+  font-size: 13px;
+  line-height: 23px;
+  font-weight: bold;
+  border-radius: 12px;
+  vertical-align: top;
+  background: #ff214f;
+}
+section#sect1 .text_box p {
+  margin-top: 1rem;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+section#sect1 .tentensale_icon_box {
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  top: 7%;
+  right: 21%;
+  z-index: 99;
+  background: url(../images/icon-emblem.png);
+  background-size: cover;
+}
+section#sect3 {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+section#sect3 ul {
+  position: relative;
+}
+section#sect3 span {
+  z-index: 99;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+section#sect3 span.prev {
+  left: 50px;
+}
+section#sect3 span.next {
+  right: 50px;
+}

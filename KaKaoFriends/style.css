@@ -1,0 +1,323 @@
+@import url(/reset.css);
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background: url(./image/bg-img.jfif) center bottom no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.flex {
+    display: flex;
+}
+
+section {
+    width: 100%;
+    height: 75%;
+}
+
+h1 {
+    width: 200px;
+    margin-left: 1rem;
+}
+
+h1 img {
+    width: 100%;
+}
+
+.intro {
+    width: 100%;
+    height: 10%;
+    position: relative;
+}
+
+h2 {
+    text-align: center;
+    width: 35%;
+    font-size: 2rem;
+    color: #000;
+    margin: auto;
+    margin-bottom: 1.5rem;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h2 span {
+    color: #f9f871;
+    font-size: 2.5rem;
+}
+
+h2#event {
+    display: none;
+}
+
+h2#character {
+    display: none;
+}
+
+/* ------------------------- content.one ------------------------ */
+.content.one {
+    width: 40%;
+    height: 100%;
+    padding-top: 1.5rem;
+    margin-left: 13em;
+}
+
+.content.one .content_box {
+    position: relative;
+    width: 100%;
+    height: 60%;
+    border: 3px solid #000;
+    margin-bottom: 1rem;
+}
+
+.content.one video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.btn_box {
+    gap: 2rem;
+    justify-content: center;
+}
+
+.btn a {
+    display: block;
+    padding: 1rem 2rem;
+    font-weight: 600;
+    color: #000;
+}
+
+.btn.event {
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    border-radius: 20px;
+}
+
+.btn:hover a {
+    background: rgba(0, 0, 0, .5);
+    border-radius: 20px;
+    color: #fee;
+}
+
+.btn.Character {
+    background-image: linear-gradient(to right top, #ff6f91, #ff7689, #ff7d81, #ff847b, #ff8c76, #ff9670, #ffa16c, #ffac69, #ffbe66, #ffd166, #ffe469, #f9f871);
+    border-radius: 20px;
+}
+
+/* ------------------------- content.two ------------------------ */
+.content.two {
+    width: 40%;
+    height: 50%;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.content.two .swiper {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.mySwiper .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mySwiper .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content.two span {
+    position: absolute;
+    display: block;
+    z-index: 99;
+}
+
+.content.two span.top {
+    background: #000;
+    top: 0;
+    height: 3px;
+    width: 0%;
+}
+
+.content.two span.right {
+    background: #000;
+    right: 0;
+    height: 0%;
+    width: 3px;
+    top: 0;
+}
+
+.content.two span.bottom {
+    background: #000;
+    height: 3px;
+    width: 0%;
+    bottom: 0;
+    right: 0;
+}
+
+.content.two span.left {
+    background: #000;
+    height: 0%;
+    width: 3px;
+    bottom: 0;
+    left: 0;
+}
+
+i.bi-caret-down-square {
+    font-size: 2rem;
+    position: absolute;
+    top: .5rem;
+    right: 1rem;
+    z-index: 99;
+    cursor: pointer;
+}
+
+/* ------------------------- content.three ------------------------ */
+.content.three {
+    display: none;
+    width: 100%;
+    height: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content.three .swiper {
+    width: 100%;
+    height: 100%;
+    background: #FEC507;
+}
+
+.content.three .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    height: 100%;
+    flex-direction: column;
+}
+
+.content.three .swiper-slide img {
+    display: block;
+    position: relative;
+    left: 2px;
+}
+
+.content.three .swiper-slide h3 {
+    background: #fff;
+    border-radius: 20px;
+    padding: .5rem 1rem;
+    position: absolute;
+    bottom: 10%;
+    font-size: 32px;
+}
+
+.content.three .swiper-slide.NEO img {
+    top: 2.2%;
+}
+
+.content.three .swiper-slide.FRODO img {
+    top: 0.2%;
+}
+
+.content.three .swiper-slide.MUZI img {
+    top: 0.2%;
+}
+
+.content.three .swiper-slide.CON img {
+    top: 17.8%;
+}
+
+.content.three .swiper-slide.TUBE img {
+    top: 6%;
+}
+
+.content.three .swiper-slide.JAY-G img {
+    top: -2%;
+}
+
+.content.three .swiper-slide.APEACH img {
+    top: 8%;
+}
+
+/* ------------------------- 라이언 ------------------------ */
+section .heart_ryan {
+    position: fixed;
+    top: 35%;
+    left: 64%;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation: RYAN_heart 1s forwards;
+}
+
+section .dance_ryan {
+    position: fixed;
+    top: 47.5%;
+    left: 70%;
+    display: none;
+}
+
+section .dance_ryan.dance {
+    display: block;
+    animation: RYAN_dance 3s forwards;
+}
+
+section .dance_ryan.danceback {
+    animation: RYAN_dance_back 3s forwards;
+}
+
+
+@keyframes RYAN_dance {
+    0% {
+        top: 47.5%;
+        left: 70%;
+    }
+
+    100% {
+        top: 47.5%;
+        left: 100%;
+    }
+}
+
+@keyframes RYAN_dance_back {
+    0% {
+        top: 47.5%;
+        left: 100%;
+    }
+
+    100% {
+        top: 47.5%;
+        left: 70%;
+    }
+}
+
+@keyframes RYAN_heart {
+    0% {
+        transform: scale(100%);
+    }
+
+    100% {
+        transform: translate(10%, 13%) scale(70%);
+    }
+}

@@ -1,0 +1,223 @@
+@import url(/reset.css);
+
+img{vertical-align: top;}
+
+.flex{display: flex;}
+
+.title p{color: #999;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* ----------------------------header---------------------------- */
+nav{height: 40px;
+align-items: center;
+justify-content: space-between;
+padding: 0 .5rem;
+background: #333;}
+
+nav h1 img{width: 100px;
+}
+
+nav ul{gap: .5rem;}
+
+nav a{font-size: 12px;
+    padding: .25rem .5rem;
+color: #fff;
+border-radius: 11px;}
+
+nav ul .login a{
+background: #000;}
+
+nav ul .login a:hover{background: #1f1f1f;}
+
+nav ul .join-membership a{background: rgb(11, 196, 226);}
+
+nav ul .join-membership a:hover{background: rgb(6, 92, 105);}
+
+/* ----------------------------main---------------------------- */
+
+/* ----------------------------main slide---------------------------- */
+
+main .slide-container img{ 
+    width: 100%;
+}
+
+main .slide-wrap{ width: 400%;}
+
+main .slide{position: relative;
+ 
+}
+
+main .slide .img{width: 100%;}
+ 
+main .slide .img::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+main .slide-container .slide .text-box{color: #fff;
+width: 300px;
+height: 200px;
+text-align: center;
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);}
+
+main .slide p{margin: 1rem 0 2rem 0;}
+
+main .slide a{
+    padding: 1rem 6rem;
+background: #f33;
+border-radius: 10px;}
+
+main .slide a:hover{background: rgb(129, 26, 26);}
+
+/* ----------------------------main gamein---------------------------- */
+main .gamein-container{width: 60%;
+    margin: 2rem auto;
+    }
+
+    main .gamein-container .text-box p{margin-bottom: 2rem;}
+
+    /* ----------------------------main championin---------------------------- */
+
+main .championin-container{text-align: center;
+width: 80%;
+margin: auto;
+}
+
+main .championin-container .article-tab li{flex: 1;}
+
+main .championin-container video{width: 95%;}
+
+main .championin-container .link{margin: 3rem 0;
+    justify-content: center;
+    gap: 1rem;
+}
+
+main .championin-container .link a{padding: .5rem 1rem;
+color: #fff;
+display: block;}
+
+main .championin-container .link a.one{background: #f33;}
+main .championin-container .link a.two{background: #333;}
+
+/* ----------------------------main gamemodein---------------------------- */
+main .gamemodein-container{width: 80%;
+margin: 0 auto 2rem;}
+
+main .gamemodein-container ul li img{width: 200px;
+border-radius: 999px;
+border: 5px solid #333;}
+
+main .gamemodein-container ul li{margin: 1rem 0;}
+
+main .gamemodein-container ul li .title{margin-top: 1rem;}
+
+/* ----------------------------main fullbg---------------------------- */
+main .full-bg{background: url(./img/bg3.jpg)
+    no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 400px;
+align-items: center;
+justify-content: center;}
+
+main .full-bg .title{
+    color: #fff;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+main .full-bg .title a{margin: auto;
+    display: block;
+    width: 200px;
+    color: #fff;
+    padding: .5rem 1rem;
+background: #f33;}
+
+
+/* ----------------------------footer---------------------------- */
+footer{padding: 2rem 0;
+background: #333;
+color: #fff;
+text-align: center;
+line-height: 30px;
+}
+
+footer h5 img{width: 100px;}
+
+footer p{margin: 1rem;}
+
+footer ul{justify-content: center;
+margin-bottom: 1rem;}
+
+footer ul li{width: 200px;}
+
+
+
+
+/* ----------------------------모바일---------------------------- */
+@media screen and (max-width:576px) {
+
+    main .championin-container .link{flex-direction: column;}
+    main .gamemodein-container ul li{text-align: center;
+        flex-direction: column;
+    }
+
+    footer>img{width: 100%;}
+}
+
+
+/* ----------------------------태블릿---------------------------- */
+@media screen and (min-width:577px) and (max-width:1199px) {
+header{display: none;}
+
+main .championin-container ul{display: flex;}
+
+main .championin-container .link a{width: 200px;}
+
+main .gamemodein-container ul li{gap: 5rem;}
+
+main .gamemodein-container ul li.style-one{flex-direction: row-reverse;
+text-align: right;
+}
+footer>img{width: 576px;}
+
+}
+
+
+
+/* ------------------------------PC------------------------------ */
+@media screen and (min-width:1200px) {
+header{display: none;}
+
+main .gamein-container{display: flex;
+gap: 5rem;}
+
+main .championin-container ul{display: flex;}
+
+main .championin-container .link a{width: 200px;}
+
+main .gamemodein-container ul{display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    gap: 5rem;
+}
+main .gamemodein-container ul li{width: 40%;
+    gap: 2rem;
+}
+
+main .gamemodein-container ul li.style-one{
+    text-align: right;
+    flex-direction: row-reverse;}
+}

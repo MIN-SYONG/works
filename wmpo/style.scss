@@ -1,0 +1,366 @@
+@import '/reset.css';
+@import './font.css';
+
+@keyframes textUp {
+    0% {
+        opacity: 0;
+        top: -20px;
+    }
+
+    100% {
+        opacity: 1;
+        top: 0;
+    }
+}
+
+@keyframes textDown {
+    0% {
+        opacity: 0;
+        top: 10px;
+    }
+
+    100% {
+        opacity: 1;
+        top: 0;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes circleMoveIn {
+    0% {
+        opacity: 0;
+        right: -130px;
+    }
+
+    100% {
+        opacity: 1;
+        right: 0px;
+    }
+
+}
+
+@keyframes moveOleft {
+    0% {
+        opacity: 0;
+        left: 20px;
+    }
+
+    100% {
+        opacity: 1;
+        left: -40px;
+    }
+
+}
+
+body {
+    font-weight: 400;
+    background: #f9f9f9;
+    color: #333;
+}
+
+.flex {
+    display: flex;
+}
+
+header {
+    position: fixed;
+    top: 32px;
+    z-index: 100;
+    width: 100%;
+    padding: 0 60px;
+    justify-content: space-between;
+    align-items: center;
+
+
+
+    h1 {
+        width: 110px;
+        height: 28px;
+        font-size: 0;
+        line-height: 0;
+        background-position: -641px -288px;
+        background-image: url(./image/txt-sprite-pc-20210406.png);
+        background-size: 838px 458px;
+
+        a {
+            display: block;
+            height: 100%;
+        }
+    }
+
+    .h_left {
+        li {
+            a {
+                display: block;
+                width: 230px;
+                height: 80px;
+
+                img {
+                    width: 100%;
+                    vertical-align: top;
+                }
+            }
+        }
+    }
+
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+section#sect1 {
+
+    .wmpo_intro {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        display: none;
+
+        .text_content {
+            position: relative;
+            z-index: 100;
+            min-height: 660px;
+            width: 500px;
+
+            h2 {
+                position: relative;
+                width: 391px;
+                height: 120px;
+                font-size: 0;
+                line-height: 0;
+                margin-top: 42px;
+                background-image: url(./image/txt-sprite-pc-20210406.png);
+                background-size: 838px 458px;
+                animation: textUp .5s ease-in .5s 1 both;
+
+            }
+
+            h2.fit_page1 {
+                background-position: -447px 0px;
+            }
+
+            h2.fit_page2 {
+                background-position: 0px 0px;
+            }
+
+            h2.fit_page3 {
+                background-position: 0px -122px;
+            }
+
+            p {
+                position: relative;
+                margin-top: 47px;
+                font-size: 18px;
+                line-height: 1.6;
+                font-family: SpoqaHanSansRegular;
+                animation: textUp .5s ease-in .8s 1 both;
+
+            }
+
+            .btn_area {
+                position: relative;
+                margin-top: 100px;
+                gap: 14px;
+                animation: textDown .5s ease-in-out 1.1s 1 both;
+
+                a {
+                    display: block;
+                    width: 180px;
+                    height: 60px;
+                    line-height: 34px;
+                    border-radius: 30px;
+                    font-size: 0;
+                    background-color: #fff;
+                    text-align: center;
+                    transition: all .5s;
+
+                    span {
+                        display: inline-block;
+                        width: 124px;
+                        height: 26px;
+                        line-height: 0;
+                        background-size: 838px 458px;
+                        background-image: url(./image/txt-sprite-pc-20210406.png);
+                    }
+
+                    span.tit_ios {
+                        background-position: -652px -122px;
+                    }
+
+                    span.tit_android {
+                        background-position: -641px -230px;
+                    }
+                }
+
+                a:hover {
+                    box-shadow: 4px 8px 12px 0 rgba(0, 0, 0, .1);
+                }
+            }
+
+        }
+
+        .area_phone {
+            width: 500px;
+            height: 645px;
+            position: relative;
+
+            span.char_main {
+                position: absolute;
+                z-index: 5;
+            }
+
+            span.char_main.op {
+                width: 750px;
+                height: 250px;
+                top: 0;
+                right: -135px;
+                animation: fadeIn .5s ease 1s 1 both;
+            }
+
+            span#char2o.char_main.o {
+                width: 240px;
+                height: 160px;
+                bottom: 80px;
+                left: -40px;
+                animation: moveOleft 1s ease 1s 1 both;
+            }
+
+            span#char2p.char_main.p {
+                width: 84px;
+                height: 71px;
+                top: -55px;
+                right: 150px;
+                animation: fadeIn 0s ease .5s 1 both;
+            }
+
+            span#char3o.char_main.o {
+                width: 190px;
+                height: 356px;
+                top: 60px;
+                left: -97px;
+                animation: fadeIn .2s ease 1.5s 1 both;
+            }
+
+            span#char3p.char_main.p {
+                width: 120px;
+                height: 126px;
+                top: -53px;
+                right: 132px;
+                animation: fadeIn .5s ease .5s 1 both;
+            }
+
+            span.img_mockup_phone {
+                position: absolute;
+                top: 12px;
+                right: 107px;
+                z-index: 3;
+                width: 286px;
+                height: 621px;
+                display: inline-block;
+                background-image: url(./image/img-sprite-pc-20210406.png);
+                background-size: 1538px 1284px;
+            }
+
+            span.img_mockup_phone.one {
+                background-position: -550px -662px;
+            }
+
+            span.img_mockup_phone.two {
+                background-position: -1040px 0px;
+            }
+
+            span.img_mockup_phone.three {
+                background-position: -1040px -623px;
+            }
+
+            span.shape_phone {
+                position: absolute;
+                top: 0;
+                right: 95px;
+                width: 310px;
+                height: 645px;
+                border-radius: 36px;
+                background-color: #f9f9f9;
+                box-shadow: 0 72px 120px 0 rgba(0, 0, 0, .13);
+                z-index: 2;
+                display: inline-block;
+            }
+
+            span.shape_circle {
+                position: absolute;
+                top: 72px;
+                right: 0;
+                width: 500px;
+                height: 500px;
+                border-radius: 100%;
+                z-index: 1;
+                animation: circleMoveIn 1.5s ease .3s 1 both;
+            }
+
+            span.shape_circle.yellow {
+                background: #ffd200;
+            }
+
+            span.shape_circle.red {
+                background: #ff4949;
+            }
+
+            span.shape_circle.blue {
+                background: #00a6ff;
+            }
+
+        }
+
+        .bg_ani {
+            width: 100%;
+            height: 100vh;
+            position: absolute;
+        }
+
+
+    }
+
+    .wmpo_intro_pagination_btn {
+        position: absolute;
+        bottom: 50px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        z-index: 10;
+ sadsad       line-height: 0;
+
+        span.bullet {
+            width: 70px;
+            height: 4px;
+            display: inline-block;
+            margin: .5px;
+            background: #000;
+            opacity: .1;
+            cursor: pointer;
+        }
+
+        span.bullet.on {
+            opacity: 1;
+            background: #333;
+        }
+    }
+
+    .wmpo_intro.on {
+        display: flex;
+    }
+
+}

@@ -1,0 +1,55 @@
+/* ------------------------header------------------------ */
+
+.logo_wrap a {
+    background: url(./img/Untitled/sp_vibe.bf655ef6\ 1.png);
+    background-position: -251px -317px;
+    width: 122px;
+    height: 28px;
+    border: 1px solid #fff;
+}
+
+.mobile_wrap a {background: url(./img/Untitled/sp_topbar.abb84804\ 1.png);
+    background-position: -536px -486px;
+    width: 37px;
+    height: 14px;
+}
+
+.menu_wrap .profile_area a .login_img{background: url(./img/Untitled/sp_topbar.abb84804\ 1.png);
+background-position: -627px -104px;
+    width: 30px;
+height: 30px;
+border-radius: 50%;
+}
+
+.menu_wrap .membership_area .mobile-version{background: url(./img/Untitled/sp_topbar.abb84804\ 1.png);
+background-position: -536px -464px;
+width: 68px;
+height: 14px;}
+
+.menu_wrap .membership_area .membership_text{background: url(./img/Untitled/sp_topbar.abb84804\ 1.png);
+background-position: -4px -156px;
+width: 192px;
+height: 14px;
+display: inline-block;
+margin: .5rem 0;
+}
+
+.menu_wrap .membership_area .membership_desc{    
+    width: 197px;
+    height: 44px;
+    background-image: linear-gradient(104deg,#ff0c28 9%,#d901df 51%,#7200ff 98%);
+    text-align: center;
+    line-height: 47px;
+    border-radius: 5px;
+}
+
+
+.menu_wrap .membership_area .membership_desc .link_subscribe{background: url(./img/Untitled/sp_topbar.abb84804\ 1.png);
+background-position: -426px -68px;
+width: 100px;
+height: 16px;
+display: inline-block;}
+
+/* -------------------------main------------------------- */
+
+/* ------------------------footer------------------------ */

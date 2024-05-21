@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cube</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="box">
+        <div id="cube" class="cube1">
+            <div class="face front">FRONT</div>
+            <div class="face back">BACK</div>
+            <div class="face right">RIGHT</div>
+            <div class="face left">LEFT</div>
+            <div class="face top">TOP</div>
+            <div class="face bottom">BOTTOM</div>
+        </div>
+    </div>
+    <nav>
+        <ul>
+            <li class="on">FRONT</li>
+            <li>RIGHT</li>
+            <li>BACK</li>
+            <li>LEFT</li>
+            <li>TOP</li>
+            <li>BOTTOM</li>
+        </ul>
+    </nav>
+    <script src="/JavaScript/jquery-3.7.1.min.js"></script>
+    <script>
+$('nav li').click(function(){
+    $('nav li').removeClass('on')
+    $(this).addClass('on')
+
+    let i = $(this).index()
+    $('#cube').removeClass()
+    $('#cube').addClass(`cube${i+1}`)
+})
+
+const i = document.querySelector('.menu').addClass('on')
+    </script>
+</body>
+</html>

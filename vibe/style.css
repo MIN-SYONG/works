@@ -1,0 +1,106 @@
+@import url(/reset.css);
+
+body {
+    background: #000;
+    color: #fff;
+}
+
+.flex {
+    display: flex;
+}
+
+a {
+    display: block;
+}
+
+
+/* ------------------------header------------------------ */
+header{padding: 1rem;
+border-right: 1px solid #333;}
+
+header .menu_wrap .profile_area a{align-items: center;
+gap: .5rem;
+margin: 1rem 0;
+padding: .5rem 0;
+border-top: 1px solid #333;}
+
+header .menu_wrap .profile_area a span{
+font-size: 15px;
+line-height: 19px;
+    color: #999;
+    display: inline-block;
+}
+
+header .menu_wrap .membership_area{text-align: center;
+border-top: 1px solid #333;
+padding: 1rem 0;}
+
+
+/* -------------------------main------------------------- */
+
+/* ------------------------footer------------------------ */
+
+
+/* 모바일 */
+@media screen and (max-width:767px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    header .menu_wrap .profile_area{display: none;}
+
+    header .menu_wrap .membership_area .membership_text{display: none;}
+
+    header .menu_wrap .membership_area{border: none;}
+
+    .menu_wrap .membership_area .membership_desc{display: none;}
+
+}
+
+/* 태블릿 */
+@media screen and (min-width:768px) and (max-width:992px) {
+    body{display: flex;}
+
+    header{width: 225px;}
+
+    header .mobile_wrap,
+    .floating_wrap,
+    .mobile-version {
+        display: none;
+    }
+
+    .menu_wrap .membership_area .membership_desc{display: inline-block;}
+}
+
+/* 태블릿2 */
+@media screen and (min-width:993px) and (max-width:1279px) {
+    body{display: flex;}
+
+    header{width: 225px;}
+    header .mobile_wrap,
+    .floating_wrap,
+    .mobile-version {
+        display: none;
+    }
+
+    .menu_wrap .membership_area .membership_desc{display: inline-block;}
+}
+
+/* PC */
+@media screen and (min-width:1280px) {
+
+body{display: flex;}
+
+header{width: 245px;}
+
+    header .mobile_wrap,
+    .floating_wrap,
+    .mobile-version {
+        display: none;
+    }
+    
+    .menu_wrap .membership_area .membership_desc{display: inline-block;}
+    
+}

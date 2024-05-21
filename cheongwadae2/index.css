@@ -1,0 +1,18 @@
+@font-face {
+    font-family: opensans;
+    src: url(./font/OpenSans_VariableFont_wdth_wght.ttf);
+}
+  @font-face {
+    font-family: binggrae;
+    src: url(./font/Binggrae-Bold.woff)
+}  
+html,body{height: 100%;}
+ 
+.wrap{font-family: opensans;
+height: 100%;
+background-size: cover;
+background-position: center;
+background-image: url(./img/landing_bg.jpg);
+
+}
+ 

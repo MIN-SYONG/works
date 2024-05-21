@@ -1,0 +1,88 @@
+@import url(/reset.css);
+
+@font-face {
+    font-family: guide;
+    src: url(./font/Pretendard-Medium.woff2);
+}
+
+@font-face {
+    font-family: anseks;
+    src: url(./font/Pretendard-SemiBold.woff2);
+}
+html,body{height: 100%;
+}
+
+header h1 img{width: 300px;
+height: 90px;}
+
+header{display: inline-flex;
+gap: 1610px;}
+
+
+header ul{display: inline-flex;
+gap: 1.3rem;
+color: #fff;
+font-family: guide;
+font-size: 1.15rem;
+margin-top: 2rem;
+}
+
+.wrap1{background-image: url(./img/bg-wrap.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+height: 100%;
+
+}
+
+main{text-align: center;
+color: #fff;
+margin-top: 5.2rem;
+}
+
+main h2{font-size: 4rem;
+text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.600);}
+
+main .box{display: inline-flex;
+    gap: 1.875rem;}
+
+main a{border: 0px solid #000;    
+background: rgba(255, 255, 255, 0.8);
+border-radius: 15px;
+padding: 3.24rem 8.65rem;
+padding-top: 8.84rem;
+margin-top: 1.4rem;
+color: #000;
+font-family: guide;
+font-size: 1.55rem;
+
+}
+
+.aone{background-image: url(./img/ico_callender.png);
+background-repeat: no-repeat;
+background-position: center;
+background-position-y: 3.25rem;
+}
+
+.atwo{background-image: url(./img/ico_callender_check.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 3.25rem;}
+
+main .fontone{font-size: 1.3rem;
+font-family: guide;
+margin-top: 2.75rem;
+line-height: 2.3rem;
+
+}
+
+main .fonttwo{font-size: 1.3rem;
+font-family: guide;
+margin-top: 3.7rem;}
+
+b{color: orange;
+text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.600);}
+
+footer{text-align: center;
+font-size: 1.5rem;
+margin-top: 4.1rem;}

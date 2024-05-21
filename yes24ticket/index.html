@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        .swiper {
+            width: 100%;
+            height: 700px;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .swiper-scrollbar {
+            opacity: 1;
+        }
+
+        .swiper-scrollbar-drag {
+            background: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="flex">
+        <div class="hd_left flex">
+            <div class="hm">
+                <span class="hm1"></span>
+                <span class="hm2"></span>
+                <span class="hm1"></span>
+            </div>
+            <h1><img src="./image/pf-logoN-w.png" alt=""></h1>
+        </div>
+        <ul class="menu flex">
+            <li><a href="#">콘서트</a></li>
+            <li><a href="#">뮤지컬</a></li>
+            <li><a href="#">연극</a></li>
+            <li><a href="#">클래식</a></li>
+            <li><a href="#">전시</a></li>
+            <li><a href="#">아동</a></li>
+        </ul>
+        <div class="hd_right flex">
+            <ul class="service_menu flex">
+                <li><a href="#">MD#</a></li>
+                <li><a href="#">지역</a></li>
+                <li><a href="#">랭킹</a></li>
+                <li><a href="#">이벤트</a></li>
+            </ul>
+            <ul class="icon_box flex">
+                <li class="search flex">
+                    <input type="text">
+                    <img src="./image/pf-srch.png" alt="">
+                </li>
+                <li><img src="./image/pf-ticket-w.png" alt=""></li>
+                <li><img src="./image/pf-global-w.png" alt=""></li>
+            </ul>
+        </div>
+    </header>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./image/banner img(1).png" alt=""></div>
+            <div class="swiper-slide"><img src="./image/banner img(2).jfif" alt=""></div>
+            <div class="swiper-slide"><img src="./image/banner img(3).jfif" alt=""></div>
+            <div class="swiper-slide"><img src="./image/banner img(4).jfif" alt=""></div>
+            <div class="swiper-slide"><img src="./image/banner img(5).jfif" alt=""></div>
+            <div class="swiper-slide"><img src="./image/banner img(6).png" alt=""></div>
+            <div class="swiper-slide"><img src="./image/banner img(7).jfif" alt=""></div>
+            <div class="swiper-slide"><img src="./image/banner img(8).jfif" alt=""></div>
+            <div class="swiper-slide"><img src="./image/banner img(9).jfif" alt=""></div>
+            <div class="swiper-slide"><img src="./image/banner img(10).jfif" alt=""></div>
+            <div class="swiper-slide"><img src="./image/banner img(11).jfif" alt=""></div>
+            <div class="swiper-slide"><img src="./image/banner img(12).png" alt=""></div>
+            <div class="swiper-slide"><img src="./image/banner img(13).png" alt=""></div>
+            <div class="swiper-slide"><img src="./image/banner img(14).png" alt=""></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-scrollbar"></div>
+    </div>
+    <section id="sect1">
+        <h2>RANKING</h2>
+        <ul class="tab_menu flex">
+            <li><a href="#musical">#뮤지컬</a></li>
+            <li><a href="#consert">#콘서트</a></li>
+            <li><a href="#play">#연극</a></li>
+            <li><a href="#classic">#클래식</a></li>
+            <li><a href="#exhibition">#전시</a></li>
+        </ul>
+        <article id="#musical" class="on">
+            <div class="art_figure">
+                <figure>
+                    <img class="poster" src="./image/뮤지컬 (1).jfif" alt="">
+                    <div class="bg_box">
+                        <img src="./image/뮤지컬 (1).jfif" alt="">
+                    </div>
+                </figure>
+                <figcaption>
+                    <h3>뮤지컬 〈파가니니〉</h3>
+                    <span>2024.04.06~2024.06.02
+                        국립중앙박물관 내 극장용</span>
+                </figcaption>
+                <div class="rank_box">
+                    <p>1위</p>
+                </div>
+            </div>
+            <div class="art_figure">
+                <figure>
+                    <img class="poster" src="./image/뮤지컬 (2).jfif" alt="">
+                    <div class="bg_box">
+                        <img src="./image/뮤지컬 (2).jfif" alt="">
+                    </div>
+                </figure>
+                <figcaption>
+                    <h3>뮤지컬 스쿨 오브 락 월드투어-서울 (Musical School Of Rock)</h3>
+                    <span>2024.01.12~2024.03.24
+                        예술의전당 오페라극장</span>
+                </figcaption>
+                <div class="rank_box">
+                    <p>2위</p>
+                </div>
+            </div>
+            <div class="art_figure">
+                <figure>
+                    <img class="poster" src="./image/뮤지컬 (3).jfif" alt="">
+                    <div class="bg_box">
+                        <img src="./image/뮤지컬 (3).jfif" alt="">
+                    </div>
+                </figure>
+                <figcaption>
+                    <h3>뮤지컬 더데빌 : 파우스트</h3>
+                    <span>2023.12.05~2024.03.03
+                        대학로 유니플렉스 1관</span>
+                </figcaption>
+                <div class="rank_box">
+                    <p>3위</p>
+                </div>
+            </div>
+        </article>
+        <article id="#consert">
+            <div class="art_figure">
+                <figure>
+                    <img class="poster" src="./image/콘서트 (1).jfif" alt="">
+                    <div class="bg_box">
+                        <img src="./image/콘서트 (1).jfif" alt="">
+                    </div>
+                </figure>
+                <figcaption>
+                    <h3>ITZY 2ND WORLD TOUR 〈BORN TO BE〉 in SEOUL</h3>
+                    <span>2024.02.24~2024.02.25
+                        잠실실내체육관</span>
+                </figcaption>
+                <div class="rank_box">
+                    <p>1위</p>
+                </div>
+            </div>
+            <div class="art_figure">
+                <figure>
+                    <img class="poster" src="./image/콘서트 (2).jfif" alt="">
+                    <div class="bg_box">
+                        <img src="./image/콘서트 (2).jfif" alt="">
+                    </div>
+                </figure>
+                <figcaption>
+                    <h3>HIPHOPPLAYA FESTIVAL 2024</h3>
+                    <span>2024.05.04~2024.05.05
+                        난지한강공원</span>
+                </figcaption>
+                <div class="rank_box">
+                    <p>2위</p>
+                </div>
+            </div>
+            <div class="art_figure">
+                <figure>
+                    <img class="poster" src="./image/콘서트 (3).jfif" alt="">
+                    <div class="bg_box">
+                        <img src="./image/콘서트 (3).jfif" alt="">
+                    </div>
+                </figure>
+                <figcaption>
+                    <h3>더 글로우 2024 (THE GLOW 2024)</h3>
+                    <span>2024.04.13~2024.04.14
+                        일산 킨텍스(KINTEX) 제 1전시장</span>
+                </figcaption>
+                <div class="rank_box">
+                    <p>3위</p>
+                </div>
+            </div>
+        </article>
+        <article id="#play">
+            <div class="art_figure">
+                <figure>
+                    <img class="poster" src="./image/연극 (1).jfif" alt="">
+                    <div class="bg_box">
+                        <img src="./image/연극 (1).jfif" alt="">
+                    </div>
+                </figure>
+                <figcaption>
+                    <h3>연극 〈헤르츠클란〉</h3>
+                    <span>2024.01.16~2024.04.07
+                        링크아트센터드림 드림3관</span>
+                </figcaption>
+                <div class="rank_box">
+                    <p>1위</p>
+                </div>
+            </div>
+            <div class="art_figure">
+                <figure>
+                    <img class="poster" src="./image/연극 (2).jfif" alt="">
+                    <div class="bg_box">
+                        <img src="./image/연극 (2).jfif" alt="">
+                    </div>
+                </figure>
+                <figcaption>
+                    <h3>연극 〈넓은 하늘의 무지개를 보면 내 마음은 춤춘다〉</h3>
+                    <span>2024.03.28~2024.04.07
+                        동덕여대공연예술센터 코튼홀(대극장)</span>
+                </figcaption>
+                <div class="rank_box">
+                    <p>2위</p>
+                </div>
+            </div>
+            <div class="art_figure">
+                <figure>
+                    <img class="poster" src="./image/연극 (3).jfif" alt="">
+                    <div class="bg_box">
+                        <img src="./image/연극 (3).jfif" alt="">
+                    </div>
+                </figure>
+                <figcaption>
+                    <h3>연극 〈이카이노 바이크〉</h3>
+                    <span>2024.02.15~2024.03.10
+                        씨어터 쿰</span>
+                </figcaption>
+                <div class="rank_box">
+                    <p>3위</p>
+                </div>
+            </div>
+        </article>
+        <article id="#classic">
+            <div class="art_figure">
+                <figure>
+                    <img class="poster" src="./image/클래식 (1).jfif" alt="">
+                    <div class="bg_box">
+                        <img src="./image/클래식 (1).jfif" alt="">
+                    </div>
+                </figure>
+                <figcaption>
+                    <h3>신카이 마코토 영화음악 콘서트</h3>
+                    <span>2024.03.10~2024.03.10
+                        롯데콘서트홀</span>
+                </figcaption>
+                <div class="rank_box">
+                    <p>1위</p>
+                </div>
+            </div>
+            <div class="art_figure">
+                <figure>
+                    <img class="poster" src="./image/클래식 (2).jfif" alt="">
+                    <div class="bg_box">
+                        <img src="./image/클래식 (2).jfif" alt="">
+                    </div>
+                </figure>
+                <figcaption>
+                    <h3>츠지이 노부유키 피아노 리사이틀</h3>
+                    <span>2024.03.03~2024.03.03
+                        예술의전당 콘서트홀</span>
+                </figcaption>
+                <div class="rank_box">
+                    <p>2위</p>
+                </div>
+            </div>
+            <div class="art_figure">
+                <figure>
+                    <img class="poster" src="./image/클래식 (3).jfif" alt="">
+                    <div class="bg_box">
+                        <img src="./image/클래식 (3).jfif" alt="">
+                    </div>
+                </figure>
+                <figcaption>
+                    <h3>힐러리 한 & 안드레아스 해플리거 듀오 리사이틀</h3>
+                    <span>2024.05.11~2024.05.11
+                        예술의전당 콘서트홀</span>
+                </figcaption>
+                <div class="rank_box">
+                    <p>3위</p>
+                </div>
+            </div>
+        </article>
+        <article id="#exhibition">
+            <div class="art_figure">
+                <figure>
+                    <img class="poster" src="./image/전시 (1).jfif" alt="">
+                    <div class="bg_box">
+                        <img src="./image/전시 (1).jfif" alt="">
+                    </div>
+                </figure>
+                <figcaption>
+                    <h3>THE GREAT UNITY</h3>
+                    <span>2024.03.01~2024.04.14
+                        DDP 전시 M2관</span>
+                </figcaption>
+                <div class="rank_box">
+                    <p>1위</p>
+                </div>
+            </div>
+            <div class="art_figure">
+                <figure>
+                    <img class="poster" src="./image/전시 (2).jfif" alt="">
+                    <div class="bg_box">
+                        <img src="./image/전시 (2).jfif" alt="">
+                    </div>
+                </figure>
+                <figcaption>
+                    <h3>Gustav Klimt（구스타프 클림트）레플리카 展</h3>
+                    <span>2024.01.19~2024.04.03
+                        진해야외공연장 전시실</span>
+                </figcaption>
+                <div class="rank_box">
+                    <p>2위</p>
+                </div>
+            </div>
+            <div class="art_figure">
+                <figure>
+                    <img class="poster" src="./image/전시 (3).jpg" alt="">
+                    <div class="bg_box">
+                        <img src="./image/전시 (3).jpg" alt="">
+                    </div>
+                </figure>
+                <figcaption>
+                    <h3>힙노시스：롱 플레잉 스토리</h3>
+                    <span>2024.03.08~2024.08.31
+                        그라운드시소 서촌</span>
+                </figcaption>
+                <div class="rank_box">
+                    <p>3위</p>
+                </div>
+            </div>
+        </article>
+        <div class="rank_plus">
+            <a href="#">랭킹 더보기 +</a>
+        </div>
+        <div class="ranking_accordion flex">
+            <div class="weekly_ranking_box">
+                <div class="wrb_top flex">
+                    <h2>WEEKLY RANKING</h2>
+                    <span>더보기 +</span>
+                </div>
+                <ul class="wrb_bottom">
+                    <li><a href="#" class="flex">
+                        <span>뮤지컬 1위</span> <img src="./image/뮤지컬 (1).jfif" alt="">
+                            <div class="content">
+                                <p>뮤지컬 〈파가니니〉</p>
+                                <span>2024.04.06~2024.06.02
+                                    국립중앙박물관 내 극장용</span>
+                            </div>
+                        </a></li>
+                    <li><a href="#" class="flex">
+                        <span>콘서트 1위</span><img src="./image/콘서트 (1).jfif" alt="">
+                            <div class="content">
+                                <p>ITZY 2ND WORLD TOUR 〈BORN TO BE〉 in SEOUL</p>
+                                <span>2024.02.24~2024.02.25
+                                    잠실실내체육관</span>
+                            </div>
+                        </a></li>
+                    <li><a href="#" class="flex">
+                        <span>연극 1위</span><img src="./image/연극 (1).jfif" alt="">
+                            <div class="content">
+                                <p>연극 〈헤르츠클란〉</p>
+                                <span>2024.01.16~2024.04.07
+                                    링크아트센터드림 드림3관</span>
+                            </div>
+                        </a></li>
+                    <li><a href="#" class="flex">
+                        <span>클래식 1위</span><img src="./image/클래식 (1).jfif" alt="">
+                            <div class="content">
+                                <p>신카이 마코토 영화음악 콘서트</p>
+                                <span>2024.03.10~2024.03.10
+                                    롯데콘서트홀</span>
+                            </div>
+                        </a></li>
+                    <li><a href="#" class="flex">
+                        <span>전시 1위</span><img src="./image/전시 (1).jfif" alt="">
+                            <div class="content">
+                                <p>THE GREAT UNITY</p>
+                                <span>2024.03.01~2024.04.14
+                                    DDP 전시 M2관</span>
+                            </div>
+                        </a></li>
+                </ul>
+            </div>
+            <div class="place_recommendation_box"></div>
+        </div>
+    </section>
+    <section id="sect2">
+        <h2>EVENT</h2>
+        <ul class="tab_menu flex">
+            <li><a href="#ticket">#Ticket open</a></li>
+            <li><a href="#what">#What's hot</a></li>
+        </ul>
+        <article id="#ticket" class="on">
+            <div class="art_figure">
+                <figure>
+                    <img class="poster" src="./image/ticket open (1).jfif" alt="">
+                    <div class="bg_box">
+                        <img src="./image/ticket open (1).jfif" alt="">
+                    </div>
+                </figure>
+                <figcaption>
+                    <h3>뷰티풀 민트 라이프 2024</h3>
+                    <span>2024.02.26(월) 오후 6:00</span>
+                </figcaption>
+                <div class="event_box1 one">
+                    <p>선예매</p>
+                </div>
+            </div>
+            <div class="art_figure">
+                <figure>
+                    <img class="poster" src="./image/ticket open (2).jfif" alt="">
+                    <div class="bg_box">
+                        <img src="./image/ticket open (2).jfif" alt="">
+                    </div>
+                </figure>
+                <figcaption>
+                    <h3>뮤지컬 [낭만별곡] 낭만연회</h3>
+                    <span>2024.02.26(월) 오후 3:00</span>
+                </figcaption>
+                <div class="event_box1">
+                    <p>단독</p>
+                </div>
+            </div>
+            <div class="art_figure">
+                <figure>
+                    <img class="poster" src="./image/ticket open (3).jfif" alt="">
+                    <div class="bg_box">
+                        <img src="./image/ticket open (3).jfif" alt="">
+                    </div>
+                </figure>
+                <figcaption>
+                    <h3>2024 시우민 생일 팬미팅〈FROZEN TIME〉</h3>
+                    <span>2024.02.27(화) 오후 8:00</span>
+                </figcaption>
+                <div class="event_box1">
+                    <p>단독</p>
+                </div>
+            </div>
+        </article>
+        <article id="#what">
+            <div class="art_figure">
+                <figure>
+                    <img class="poster" src="./image/what's hot (1).jfif" alt="">
+                    <div class="bg_box">
+                        <img src="./image/what's hot (1).jfif" alt="">
+                    </div>
+                </figure>
+                <figcaption>
+                    <h3>2am Concert "One Take"</h3>
+                    <span>2024. 03. 16.~2024. 03. 24. 서울, 부산</span>
+                </figcaption>
+            </div>
+            <div class="art_figure">
+                <figure>
+                    <img class="poster" src="./image/what's hot (2).jfif" alt="">
+                    <div class="bg_box">
+                        <img src="./image/what's hot (2).jfif" alt="">
+                    </div>
+                </figure>
+                <figcaption>
+                    <h3>창작가무극 다윈 영의 악의 기원</h3>
+                    <span>2024. 03. 08.~2024. 03. 24. 예술의전당 CJ토월극장</span>
+                </figcaption>
+                <div class="event_box2 flex">
+                    <p>30%</p>
+                </div>
+            </div>
+            <div class="art_figure">
+                <figure>
+                    <img class="poster" src="./image/what's hot (3).jfif" alt="">
+                    <div class="bg_box">
+                        <img src="./image/what's hot (3).jfif" alt="">
+                    </div>
+                </figure>
+                <figcaption>
+                    <h3>뮤지컬 여기, 피화당</h3>
+                    <span>2024. 02. 07.~2024. 04. 14. 플러스씨어터</span>
+                </figcaption>
+                <div class="event_box2 flex">
+                    <p>30%</p>
+                </div>
+            </div>
+        </article>
+        <div class="rank_plus">
+            <a href="#">이벤트 더보기 +</a>
+        </div>
+        <div class="banner">
+            <img src="./image/sect_banner.png" alt="">
+        </div>
+    </section>
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- <script src="/JavaScript/jquery-3.7.1.min.js"></script> -->
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            scrollbar: {
+                el: ".swiper-scrollbar",
+                hide: true,
+            },
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+
+        });
+    </script>
+
+    <script>
+
+
+        function tabcont(tab) {
+            let menu_li = document.querySelectorAll(tab + ' .tab_menu li a')
+            let tabs = document.querySelectorAll(tab + ' article')
+            menu_li.forEach(function (meun_btn, i) {
+                meun_btn.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    tabs.forEach(function (as) {
+                        as.classList.remove('on')
+                    })
+                    tabs[i].classList.add('on')
+                })
+            })
+        }
+
+        tabcont('#sect1')
+        tabcont('#sect2')
+        // function tabcont(tab) {
+        //     $(tab).find('.tab_menu li').click(function (e) {
+        //         e.preventDefault()
+        //         let i = $(this).index()
+        //         $(tab).find('article').removeClass('on')
+        //         $(tab).find('article').eq(i).addClass('on')
+        //     })
+        // }
+
+        // 탭 메뉴와 아티클을 짝지어
+        // 같은 목록에 있는 탭과 같은 섹션에 있는 아티클 분리
+
+
+
+    </script>
+</body>
+
+</html>

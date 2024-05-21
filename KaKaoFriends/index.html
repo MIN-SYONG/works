@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KakaoFriends</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <h1><img src="./image/logo.png" alt=""></h1>
+    <div class="intro">
+        <h2 id="main"><span>"카카오 프랜즈"</span> 에 대해 들어보셨나요?</h2>
+        <h2 id="event">진행중인 <span>"이벤트"</span> 를 확인해보세요!</h2>
+        <h2 id="character">카카오 프랜즈<span>"캐릭터"</span> 를 소개합니다!</h2>
+    </div>
+    <section>
+        <div class="content one">
+            <div class="content_box">
+                <video src="./image/[카카오프렌즈] 프렌즈밴드의 생일축하 연주.mp4" autoplay muted loop></video>
+            </div>
+            <div class="btn_box flex">
+                <div class="btn event"><a href="#">이벤트 소개</a></div>
+                <div class="btn Character"><a href="#">캐릭터 소개</a></div>
+            </div>
+        </div>
+        <div class="content two">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./image/event1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./image/event2.jfif" alt=""></div>
+                    <div class="swiper-slide"><img src="./image/event3.png" alt=""></div>
+                </div>
+            </div>
+            <i class="bi bi-caret-down-square"></i>
+            <span class="top"></span>
+            <span class="right"></span>
+            <span class="bottom"></span>
+            <span class="left"></span>
+        </div>
+        <div class="content three">
+            <div class="swiper character_slide">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide NEO">
+                        <img src="./image/NEO.gif" alt="">
+                        <h3 style="color: #829cc6;">NEO</h3>
+                    </div>
+                    <div class="swiper-slide FRODO">
+                        <img src="./image/FRODO.gif" alt="">
+                        <h3 style="color: #a67b40;">FRODO</h3>
+                    </div>
+                    <div class="swiper-slide MUZI">
+                        <img src="./image/MUZI.gif" alt="">
+                        <h3 style="color: #fed300;">MUZI</h3>
+                    </div>
+                    <div class="swiper-slide CON">
+                        <img src="./image/CONa.gif" alt="">
+                        <h3 style="color: #398e42">CON</h3>
+                    </div>
+                    <div class="swiper-slide TUBE">
+                        <img src="./image/TUBE.gif" alt="">
+                        <h3 style="color: #eeb948;">TUBE</h3>
+                    </div>
+                    <div class="swiper-slide JAY-G">
+                        <img src="./image/JAY-G.gif" alt="">
+                        <h3 style="color: #614f24;">JAY-G</h3>
+                    </div>
+                    <div class="swiper-slide APEACH">
+                        <img src="./image/APEACH.gif" alt="">
+                        <h3 style="color: #eec6c6;">APEACH</h3>
+                    </div>
+                    <div class="swiper-slide RYAN">
+                        <img src="./image/RYAN.gif" alt="">
+                        <h3 style="color: #dd9b23;">RYAN</h3>
+                    </div>
+                </div>
+            </div>
+            <i class="bi bi-caret-down-square"></i>
+        </div>
+        <div class="heart_ryan"><img src="./dance_ryan3.gif" alt=""></div>
+        <div class="dance_ryan"><img src="./image/신나 라이언.gif" alt=""></div>
+        
+    </section>
+    <script src="/JavaScript/jquery-3.7.1.min.js"></script>
+    <script src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+
+        });
+        var swiper = new Swiper(".character_slide", {
+            slidesPerView: 6,
+            mousewheel: true,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+
+
+    </script>
+</body>
+
+</html>
